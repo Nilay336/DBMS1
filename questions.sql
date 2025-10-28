@@ -318,7 +318,8 @@ ALTER TABLE STUDENT
 DROP COLUMN Gender;
 
 -- Write SQL Queries to Create non updatable view using any query using above table.
-CREATE VIEW StudentCourses SELECT R_No, First_Name, Last_Name, Course FROM STUDENT WITH CHECK OPTION;
+CREATE VIEW StudentCourses AS SELECT R_No, First_Name, Last_Name, Course FROM STUDENT WITH CHECK OPTION;
+
 
 
 
